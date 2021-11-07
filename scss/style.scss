@@ -1,0 +1,16 @@
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "vars";
+@import "mixins";
+@import "header";
+@import "footer";
+@import "index";
+@import "galeria";
+@import "carta";
+@import "contacto";
+@import "media-querys";
