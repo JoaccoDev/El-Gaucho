@@ -1,1 +1,29 @@
 /* Media Querys */
+
+/* Celulares pequeños */
+@media only screen and (max-width: 320px) {
+}
+
+
+
+/* Celulares standard */
+@media only screen and (min-width: 320px) and (max-width:641px) {
+}
+
+
+
+/* Celulares grandes */
+@media only screen and (min-width: 641px) and (max-width: 920px) {
+}
+
+
+
+/* Tablets */
+@media only screen and (min-width: 920px) and (max-width:1025px) {
+}
+
+
+
+/* Laptop */
+@media only screen and (min-width: 1025px) and (max-width:1280px) {
+}

@@ -1,1 +1,60 @@
 /* Index */
+
+.Index-bgImg{
+    .bgImgFixed{
+        background: url(../assets/img/fondo-index.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .bgImgCaja{
+        position: absolute;
+        top: 38vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 35%;
+        height: 25%;
+        text-align: center;
+        border: 3px solid $border;
+        border-radius: 75px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        .bgImgItem1{
+            /* margin: 5%; */
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+        }
+        .bgImgItem2{
+            margin-top: 1rem;
+            padding: 0.6rem 4.3rem;
+            background-color: $bg1;
+            color: $letras;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-size: 1.5rem;
+            border: 5px solid $bg1;
+            transition-duration: 0.5s;
+            &:hover{
+                color: $bg1;
+                background-color: $letras;
+                border: 5px solid $bg1;
+                font-weight: bold;
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+.Index-gridContainer{
+    height: 200vh;
+}

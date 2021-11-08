@@ -1,11 +1,17 @@
+@import "vars";
+
 /* Reseteo */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    color: $letras;
+    background-color: $bg2;
+    font-family: $raleway
+}
 
-@import "vars";
 @import "mixins";
 @import "header";
 @import "footer";
