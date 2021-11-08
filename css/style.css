@@ -10,12 +10,103 @@ body {
   background-color: #401D15;
   font-family: "Raleway", sans-serif; }
 
-/* Mixins */
 /* Header */
 h1 {
   display: none; }
 
+nav {
+  z-index: 5;
+  font-family: "Montserrat", sans-serif;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  background-color: #1a1a1a; }
+  nav .checkbtn {
+    font-size: 30px;
+    color: blanchedalmond;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none; }
+  nav #check {
+    display: none; }
+  nav .logo {
+    float: left;
+    width: 20%;
+    line-height: 80px;
+    margin-left: 80px; }
+    nav .logo .logoImg {
+      height: 70px; }
+  nav ul {
+    float: right;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    nav ul li {
+      list-style: none; }
+      nav ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 12px 40px;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: blanchedalmond;
+        border-radius: 50px;
+        transition: all 0.5s ease; }
+        nav ul li a:hover {
+          background-color: blanchedalmond;
+          color: #1a1a1a;
+          font-weight: bold; }
+
 /* Footer */
+footer {
+  font-family: "Roboto Mono", monospace;
+  background-color: #1a1a1a;
+  color: blanchedalmond;
+  height: auto;
+  width: 100%;
+  padding-top: 40px; }
+  footer .footerContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; }
+    footer .footerContenido img {
+      width: 30vw; }
+  footer .footerRedes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0; }
+    footer .footerRedes li {
+      margin: 0 10px; }
+    footer .footerRedes a {
+      text-decoration: none;
+      color: blanchedalmond; }
+      footer .footerRedes a i {
+        font-size: 1.1rem;
+        margin: 1.3rem 1.3rem 0 1.3rem;
+        transition: all 0.3s ease; }
+        footer .footerRedes a i:hover {
+          transform: scale(1.5); }
+  footer .footerCopyright {
+    background-color: #050505;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center; }
+    footer .footerCopyright p {
+      font-size: 14px;
+      word-spacing: 5px;
+      letter-spacing: 1px;
+      margin: 0; }
+
 /* Index */
 .Index-bgImg .bgImgFixed {
   background: url(../assets/img/fondo-index.jpg) no-repeat center;
@@ -75,6 +166,38 @@ h1 {
 /* Contacto */
 /* Media Querys */
 /* Celulares pequeños */
+@media only screen and (max-width: 320px) {
+  nav {
+    height: 60px; }
+    nav .checkbtn {
+      display: block;
+      line-height: 60px;
+      font-size: 24px;
+      margin-right: 20px; }
+    nav #check:checked ~ ul {
+      left: 0; }
+    nav .logo {
+      line-height: 60px;
+      margin: 2px 0 0 15px; }
+      nav .logo .logoImg {
+        height: 50px; }
+    nav ul {
+      float: none;
+      padding: 0;
+      margin: auto;
+      position: fixed;
+      z-index: 4;
+      top: 60px;
+      right: 0;
+      left: 100%;
+      bottom: 0;
+      width: auto;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      background-color: rgba(5, 5, 5, 0.8);
+      overflow: hidden;
+      transition: all 0.25s ease-in-out; } }
+
 /* Celulares standard */
 /* Celulares grandes */
 /* Tablets */

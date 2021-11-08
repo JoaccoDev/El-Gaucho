@@ -2,6 +2,42 @@
 
 /* Celulares pequeños */
 @media only screen and (max-width: 320px) {
+    nav{
+        height: 60px;
+        .checkbtn{
+            display: block;
+            line-height: 60px;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+        .logo{
+            line-height: 60px;
+            margin: 2px 0 0 15px;
+            .logoImg{
+                height: 50px;
+            }
+        }
+        ul{
+            float: none;
+            padding: 0;
+            margin: auto;
+            position: fixed;
+            z-index: 4;
+            top: 60px;
+            right: 0;
+            left: 100%;
+            bottom: 0;
+            width: auto;
+            height: calc(100vh - 60px);
+            flex-direction: column;
+            background-color: rgba(5, 5, 5, 0.8);
+            overflow: hidden;
+            transition: all 0.25s ease-in-out;
+        }
+    }
 }
 
 

@@ -3,3 +3,60 @@
 h1{
     display: none;
 }
+nav{
+    z-index: 5;
+    font-family: $montserrat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: $bg1;
+    .checkbtn{
+        font-size: 30px;
+        color: $letras;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .logo{
+        float: left;
+        width: 20%;
+        line-height: 80px;
+        margin-left: 80px;
+        .logoImg{
+            height: 70px;
+        }
+    }
+    ul{
+        float: right;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                display: block;
+                padding: 12px 40px;
+                font-size: 22px;
+                text-transform: uppercase;
+                color: $letras;
+                border-radius: 50px;
+                transition: all 0.5s ease;
+                &:hover{
+                    background-color: $letras;
+                    color: $bg1;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
