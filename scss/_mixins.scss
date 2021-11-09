@@ -1,0 +1,27 @@
+@mixin titulos {
+    text-align: center;
+    margin: 60px;
+    width: auto;
+    h4{
+        text-transform: capitalize;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 2px;
+            background-color: $titulosBefore;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        span{
+            display: block;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+}

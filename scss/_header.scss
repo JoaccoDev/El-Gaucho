@@ -57,6 +57,11 @@ nav{
                     font-weight: bold;
                 }
             }
+            .active{
+                background-color: $letras;
+                color: $bg1;
+                font-weight: bold;
+            }
         }
     }
 }

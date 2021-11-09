@@ -62,6 +62,10 @@ nav {
           background-color: blanchedalmond;
           color: #1a1a1a;
           font-weight: bold; }
+      nav ul li .active {
+        background-color: blanchedalmond;
+        color: #1a1a1a;
+        font-weight: bold; }
 
 /* Footer */
 footer {
@@ -84,14 +88,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0; }
+    margin: 1rem 0 3rem 0;
+    padding: 0; }
     footer .footerRedes li {
       margin: 0 10px; }
     footer .footerRedes a {
       text-decoration: none;
       color: blanchedalmond; }
       footer .footerRedes a i {
-        font-size: 1.1rem;
+        font-size: 2rem;
         margin: 1.3rem 1.3rem 0 1.3rem;
         transition: all 0.3s ease; }
         footer .footerRedes a i:hover {
@@ -158,8 +163,69 @@ footer {
       font-weight: bold;
       transform: scale(1.03); }
 
-.Index-gridContainer {
-  height: 200vh; }
+.Index-gridCont {
+  width: 85%;
+  margin: 70px auto 150px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5rem;
+  grid-template-areas: "nosotros carousel"; }
+  .Index-gridCont .gridNosotros {
+    grid-area: nosotros; }
+    .Index-gridCont .gridNosotros .nosotrosTitulo {
+      text-align: center;
+      margin: 60px;
+      width: auto; }
+      .Index-gridCont .gridNosotros .nosotrosTitulo h4 {
+        text-transform: capitalize;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px; }
+        .Index-gridCont .gridNosotros .nosotrosTitulo h4::before {
+          position: absolute;
+          content: "";
+          width: 100px;
+          height: 2px;
+          background-color: #ff7620;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+        .Index-gridCont .gridNosotros .nosotrosTitulo h4 span {
+          display: block;
+          font-size: 18px;
+          font-style: italic; }
+    .Index-gridCont .gridNosotros p {
+      text-align: center;
+      font-size: 22px; }
+  .Index-gridCont .gridCarousel {
+    grid-area: carousel;
+    max-width: 600px;
+    margin: auto; }
+    .Index-gridCont .gridCarousel .carouselTitulo {
+      text-align: center;
+      margin: 60px;
+      width: auto; }
+      .Index-gridCont .gridCarousel .carouselTitulo h4 {
+        text-transform: capitalize;
+        font-size: 36px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px; }
+        .Index-gridCont .gridCarousel .carouselTitulo h4::before {
+          position: absolute;
+          content: "";
+          width: 100px;
+          height: 2px;
+          background-color: #ff7620;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+        .Index-gridCont .gridCarousel .carouselTitulo h4 span {
+          display: block;
+          font-size: 18px;
+          font-style: italic; }
 
 /* Galería */
 /* Carta */
@@ -196,7 +262,13 @@ footer {
       flex-direction: column;
       background-color: rgba(5, 5, 5, 0.8);
       overflow: hidden;
-      transition: all 0.25s ease-in-out; } }
+      transition: all 0.25s ease-in-out; }
+  footer .footerContenido img {
+    width: 60vw; }
+  footer .footerRedes {
+    width: 100%; }
+    footer .footerRedes a i {
+      font-size: 0.8rem; } }
 
 /* Celulares standard */
 /* Celulares grandes */

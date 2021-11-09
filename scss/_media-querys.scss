@@ -38,6 +38,21 @@
             transition: all 0.25s ease-in-out;
         }
     }
+    footer{
+        .footerContenido{
+            img{
+                width: 60vw;
+            }
+        }
+        .footerRedes{
+            width: 100%;
+            a{
+                i{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
 }
 
 

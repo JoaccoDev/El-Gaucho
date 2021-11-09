@@ -55,6 +55,31 @@
         }
     }
 }
-.Index-gridContainer{
-    height: 200vh;
+.Index-gridCont{
+    width: 85%;
+    margin: 70px auto 150px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    grid-template-areas:
+    "nosotros carousel";
+    .gridNosotros{
+        grid-area: nosotros;
+        .nosotrosTitulo{
+            @include titulos
+        }
+        p{
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+    .gridCarousel{
+        grid-area: carousel;
+        max-width: 600px;
+        margin: auto;
+        .carouselTitulo{
+            @include titulos
+        }
+    }
 }
