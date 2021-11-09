@@ -133,6 +133,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 16px 0px black;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +164,7 @@ footer {
       font-weight: bold;
       transform: scale(1.03); }
 
-.Index-gridCont {
+.Index-gridContainer {
   width: 85%;
   margin: 70px auto 150px auto;
   display: grid;
@@ -171,63 +172,156 @@ footer {
   grid-template-rows: 1fr;
   gap: 5rem;
   grid-template-areas: "nosotros carousel"; }
-  .Index-gridCont .gridNosotros {
+  .Index-gridContainer .gridNosotros {
     grid-area: nosotros; }
-    .Index-gridCont .gridNosotros .nosotrosTitulo {
+    .Index-gridContainer .gridNosotros .nosotrosTitulo {
       text-align: center;
       margin: 60px;
       width: auto; }
-      .Index-gridCont .gridNosotros .nosotrosTitulo h4 {
+      .Index-gridContainer .gridNosotros .nosotrosTitulo h4 {
         text-transform: capitalize;
         font-size: 36px;
         position: relative;
         display: inline-block;
         padding-bottom: 10px; }
-        .Index-gridCont .gridNosotros .nosotrosTitulo h4::before {
+        .Index-gridContainer .gridNosotros .nosotrosTitulo h4::before {
           position: absolute;
           content: "";
-          width: 100px;
+          width: 50%;
           height: 2px;
           background-color: #ff7620;
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridCont .gridNosotros .nosotrosTitulo h4 span {
+        .Index-gridContainer .gridNosotros .nosotrosTitulo h4 span {
           display: block;
-          font-size: 18px;
+          font-size: 16px;
           font-style: italic; }
-    .Index-gridCont .gridNosotros p {
+    .Index-gridContainer .gridNosotros p {
       text-align: center;
       font-size: 22px; }
-  .Index-gridCont .gridCarousel {
+  .Index-gridContainer .gridCarousel {
     grid-area: carousel;
     max-width: 600px;
     margin: auto; }
-    .Index-gridCont .gridCarousel .carouselTitulo {
+    .Index-gridContainer .gridCarousel .carouselTitulo {
       text-align: center;
       margin: 60px;
       width: auto; }
-      .Index-gridCont .gridCarousel .carouselTitulo h4 {
+      .Index-gridContainer .gridCarousel .carouselTitulo h4 {
         text-transform: capitalize;
         font-size: 36px;
         position: relative;
         display: inline-block;
         padding-bottom: 10px; }
-        .Index-gridCont .gridCarousel .carouselTitulo h4::before {
+        .Index-gridContainer .gridCarousel .carouselTitulo h4::before {
           position: absolute;
           content: "";
-          width: 100px;
+          width: 50%;
           height: 2px;
           background-color: #ff7620;
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridCont .gridCarousel .carouselTitulo h4 span {
+        .Index-gridContainer .gridCarousel .carouselTitulo h4 span {
           display: block;
-          font-size: 18px;
+          font-size: 16px;
           font-style: italic; }
 
 /* Galería */
+.galeriaTitulo {
+  text-align: center;
+  margin: 60px;
+  width: auto;
+  margin-top: 140px; }
+  .galeriaTitulo h4 {
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; }
+    .galeriaTitulo h4::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: #ff7620;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+    .galeriaTitulo h4 span {
+      display: block;
+      font-size: 16px;
+      font-style: italic; }
+
+.galeria {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 200px 200px;
+  grid-gap: 22px;
+  grid-auto-flow: dense; }
+  .galeria .galeriaContainer .galeriaItem {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .galeria .galeriaContainer .galeriaItem:hover .galeriaImg img {
+      transform: scale(1.22); }
+    .galeria .galeriaContainer .galeriaItem:hover .galeriaTexto {
+      opacity: 1;
+      padding: 1em;
+      width: 100%;
+      animation: haciaAbajo 0.3s linear; }
+    .galeria .galeriaContainer .galeriaItem .galeriaImg {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      .galeria .galeriaContainer .galeriaItem .galeriaImg img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        object-position: 50% 50%;
+        transition: all 0.5s ease-in-out; }
+    .galeria .galeriaContainer .galeriaItem .galeriaTexto {
+      z-index: 3;
+      width: 100%;
+      font-size: 22px;
+      font-family: "Roboto Mono", monospace;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+      backdrop-filter: blur(5px) saturate(1.2);
+      -webkit-backdrop-filter: blur(5px) saturate(1.2); }
+  .galeria .columnSpan1 {
+    grid-column: span 1; }
+  .galeria .columnSpan2 {
+    grid-column: span 2; }
+  .galeria .columnSpan3 {
+    grid-column: span 3; }
+  .galeria .rowSpan1 {
+    grid-row: span 1; }
+  .galeria .rowSpan2 {
+    grid-row: span 2; }
+  .galeria .rowSpan3 {
+    grid-row: span 3; }
+
+@keyframes haciaAbajo {
+  0% {
+    top: 10%; }
+  50% {
+    top: 35%; }
+  100% {
+    top: 50%; } }
+
 /* Carta */
 /* Contacto */
 /* Media Querys */
@@ -268,9 +362,35 @@ footer {
   footer .footerRedes {
     width: 100%; }
     footer .footerRedes a i {
-      font-size: 0.8rem; } }
+      font-size: 0.8rem; }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
+      grid-column: span 1; }
+    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
+      grid-row: span 1; } }
 
 /* Celulares standard */
+@media only screen and (min-width: 320px) and (max-width: 641px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr); }
+    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
+      grid-column: span 1; }
+    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
+      grid-row: span 1; } }
+
 /* Celulares grandes */
+@media only screen and (min-width: 641px) and (max-width: 920px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr); }
+    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4 {
+      grid-column: span 1; }
+    .galeria .columnSpan5, .galeria .columnSpan6 {
+      grid-column: span 2; }
+    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4 {
+      grid-row: span 1; }
+    .galeria .rowSpan5, .galeria .rowSpan6 {
+      grid-row: span 2; } }
+
 /* Tablets */
 /* Laptop */
