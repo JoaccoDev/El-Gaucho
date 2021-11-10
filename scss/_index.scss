@@ -27,7 +27,7 @@
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-        .bgImgItem1{
+        h2{
             /* margin: 5%; */
             font-size: 2rem;
             font-weight: bold;
@@ -36,7 +36,7 @@
             letter-spacing: 1px;
             word-spacing: 2px;
         }
-        .bgImgItem2{
+        a{
             margin-top: 1rem;
             padding: 0.6rem 4.3rem;
             background-color: $bg1;
@@ -58,7 +58,7 @@
 }
 .Index-gridContainer{
     width: 85%;
-    margin: 70px auto 150px auto;
+    margin: 70px auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -73,6 +73,7 @@
         p{
             text-align: center;
             font-size: 22px;
+            margin: auto;
         }
     }
     .gridCarousel{

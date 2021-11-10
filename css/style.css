@@ -6,6 +6,7 @@
   box-sizing: border-box; }
 
 body {
+  width: 100%;
   color: blanchedalmond;
   background-color: #401D15;
   font-family: "Raleway", sans-serif; }
@@ -74,7 +75,8 @@ footer {
   color: blanchedalmond;
   height: auto;
   width: 100%;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-top: 150px; }
   footer .footerContenido {
     display: flex;
     align-items: center;
@@ -85,6 +87,7 @@ footer {
       width: 30vw; }
   footer .footerRedes {
     list-style: none;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,8 +99,8 @@ footer {
       text-decoration: none;
       color: blanchedalmond; }
       footer .footerRedes a i {
-        font-size: 2rem;
-        margin: 1.3rem 1.3rem 0 1.3rem;
+        font-size: 1.5rem;
+        margin: 2rem 1.3rem 0 1.3rem;
         transition: all 0.3s ease; }
         footer .footerRedes a i:hover {
           transform: scale(1.5); }
@@ -139,7 +142,7 @@ footer {
   align-items: center;
   flex-direction: column;
   overflow: hidden; }
-  .Index-bgImg .bgImgCaja .bgImgItem1 {
+  .Index-bgImg .bgImgCaja h2 {
     /* margin: 5%; */
     font-size: 2rem;
     font-weight: bold;
@@ -147,7 +150,7 @@ footer {
     margin-bottom: 1rem;
     letter-spacing: 1px;
     word-spacing: 2px; }
-  .Index-bgImg .bgImgCaja .bgImgItem2 {
+  .Index-bgImg .bgImgCaja a {
     margin-top: 1rem;
     padding: 0.6rem 4.3rem;
     background-color: #1a1a1a;
@@ -157,7 +160,7 @@ footer {
     font-size: 1.5rem;
     border: 5px solid #1a1a1a;
     transition-duration: 0.5s; }
-    .Index-bgImg .bgImgCaja .bgImgItem2:hover {
+    .Index-bgImg .bgImgCaja a:hover {
       color: #1a1a1a;
       background-color: blanchedalmond;
       border: 5px solid #1a1a1a;
@@ -166,7 +169,7 @@ footer {
 
 .Index-gridContainer {
   width: 85%;
-  margin: 70px auto 150px auto;
+  margin: 70px auto 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -178,13 +181,13 @@ footer {
       text-align: center;
       margin: 60px;
       width: auto; }
-      .Index-gridContainer .gridNosotros .nosotrosTitulo h4 {
+      .Index-gridContainer .gridNosotros .nosotrosTitulo h2 {
         text-transform: capitalize;
         font-size: 36px;
         position: relative;
         display: inline-block;
         padding-bottom: 10px; }
-        .Index-gridContainer .gridNosotros .nosotrosTitulo h4::before {
+        .Index-gridContainer .gridNosotros .nosotrosTitulo h2::before {
           position: absolute;
           content: "";
           width: 50%;
@@ -193,13 +196,14 @@ footer {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridContainer .gridNosotros .nosotrosTitulo h4 span {
+        .Index-gridContainer .gridNosotros .nosotrosTitulo h2 span {
           display: block;
           font-size: 16px;
           font-style: italic; }
     .Index-gridContainer .gridNosotros p {
       text-align: center;
-      font-size: 22px; }
+      font-size: 22px;
+      margin: auto; }
   .Index-gridContainer .gridCarousel {
     grid-area: carousel;
     max-width: 600px;
@@ -208,13 +212,13 @@ footer {
       text-align: center;
       margin: 60px;
       width: auto; }
-      .Index-gridContainer .gridCarousel .carouselTitulo h4 {
+      .Index-gridContainer .gridCarousel .carouselTitulo h2 {
         text-transform: capitalize;
         font-size: 36px;
         position: relative;
         display: inline-block;
         padding-bottom: 10px; }
-        .Index-gridContainer .gridCarousel .carouselTitulo h4::before {
+        .Index-gridContainer .gridCarousel .carouselTitulo h2::before {
           position: absolute;
           content: "";
           width: 50%;
@@ -223,7 +227,7 @@ footer {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridContainer .gridCarousel .carouselTitulo h4 span {
+        .Index-gridContainer .gridCarousel .carouselTitulo h2 span {
           display: block;
           font-size: 16px;
           font-style: italic; }
@@ -233,14 +237,14 @@ footer {
   text-align: center;
   margin: 60px;
   width: auto;
-  margin-top: 140px; }
-  .galeriaTitulo h4 {
+  margin-top: 150px; }
+  .galeriaTitulo h2 {
     text-transform: capitalize;
     font-size: 36px;
     position: relative;
     display: inline-block;
     padding-bottom: 10px; }
-    .galeriaTitulo h4::before {
+    .galeriaTitulo h2::before {
       position: absolute;
       content: "";
       width: 50%;
@@ -249,7 +253,7 @@ footer {
       bottom: 0;
       left: 50%;
       transform: translateX(-50%); }
-    .galeriaTitulo h4 span {
+    .galeriaTitulo h2 span {
       display: block;
       font-size: 16px;
       font-style: italic; }
@@ -257,7 +261,6 @@ footer {
 .galeria {
   width: 85%;
   margin: auto;
-  margin-bottom: 150px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 200px 200px;
@@ -271,7 +274,7 @@ footer {
       transform: scale(1.22); }
     .galeria .galeriaContainer .galeriaItem:hover .galeriaTexto {
       opacity: 1;
-      padding: 1em;
+      padding: 12px;
       width: 100%;
       animation: haciaAbajo 0.3s linear; }
     .galeria .galeriaContainer .galeriaItem .galeriaImg {
@@ -338,7 +341,7 @@ footer {
       left: 0; }
     nav .logo {
       line-height: 60px;
-      margin: 2px 0 0 15px; }
+      margin: 2px 0 0 10px; }
       nav .logo .logoImg {
         height: 50px; }
     nav ul {
@@ -354,26 +357,65 @@ footer {
       width: auto;
       height: calc(100vh - 60px);
       flex-direction: column;
-      background-color: rgba(5, 5, 5, 0.8);
+      justify-content: start;
+      background-color: rgba(5, 5, 5, 0.9);
       overflow: hidden;
       transition: all 0.25s ease-in-out; }
+      nav ul li {
+        margin: 2rem; }
   footer .footerContenido img {
-    width: 60vw; }
-  footer .footerRedes {
-    width: 100%; }
-    footer .footerRedes a i {
-      font-size: 0.8rem; }
+    width: 65vw; }
+  footer .footerRedes a i {
+    font-size: 0.8rem; }
   .galeria {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 1fr; }
     .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
       grid-column: span 1; }
     .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
       grid-row: span 1; } }
 
 /* Celulares standard */
-@media only screen and (min-width: 320px) and (max-width: 641px) {
+@media only screen and (min-width: 321px) and (max-width: 640px) {
+  nav {
+    height: 60px; }
+    nav .checkbtn {
+      display: block;
+      line-height: 60px;
+      font-size: 26px;
+      margin-right: 20px; }
+    nav #check:checked ~ ul {
+      left: 0; }
+    nav .logo {
+      line-height: 60px;
+      margin: 2px 0 0 30px; }
+      nav .logo .logoImg {
+        height: 50px; }
+    nav ul {
+      float: none;
+      padding: 0;
+      margin: auto;
+      position: fixed;
+      z-index: 4;
+      top: 60px;
+      right: 0;
+      left: 100%;
+      bottom: 0;
+      width: auto;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      justify-content: start;
+      background-color: rgba(5, 5, 5, 0.9);
+      overflow: hidden;
+      transition: all 0.25s ease-in-out; }
+      nav ul li {
+        margin: 2rem; }
+  footer .footerContenido img {
+    width: 60vw; }
+  footer .footerRedes a i {
+    font-size: 1.2rem; }
   .galeria {
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px; }
     .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
       grid-column: span 1; }
     .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
@@ -381,6 +423,41 @@ footer {
 
 /* Celulares grandes */
 @media only screen and (min-width: 641px) and (max-width: 920px) {
+  nav {
+    height: 70px; }
+    nav .checkbtn {
+      display: block;
+      line-height: 70px;
+      font-size: 32px;
+      margin-right: 30px; }
+    nav #check:checked ~ ul {
+      left: 0; }
+    nav .logo {
+      line-height: 70px;
+      margin: 2px 0 0 40px; }
+      nav .logo .logoImg {
+        height: 60px; }
+    nav ul {
+      float: none;
+      padding: 0;
+      margin: auto;
+      position: fixed;
+      z-index: 4;
+      top: 70px;
+      right: 0;
+      left: 100%;
+      bottom: 0;
+      width: auto;
+      height: calc(100vh - 70px);
+      flex-direction: column;
+      justify-content: start;
+      background-color: rgba(5, 5, 5, 0.9);
+      overflow: hidden;
+      transition: all 0.25s ease-in-out; }
+      nav ul li {
+        margin: 2rem; }
+  footer .footerContenido img {
+    width: 50vw; }
   .galeria {
     grid-template-columns: repeat(3, 1fr); }
     .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4 {
@@ -393,4 +470,44 @@ footer {
       grid-row: span 2; } }
 
 /* Tablets */
+@media only screen and (min-width: 921px) and (max-width: 1025px) {
+  nav {
+    height: 80px; }
+    nav .checkbtn {
+      display: block;
+      line-height: 80px;
+      font-size: 36px;
+      margin-right: 30px; }
+    nav #check:checked ~ ul {
+      left: 0; }
+    nav .logo {
+      line-height: 80px;
+      margin: 2px 0 0 40px; }
+      nav .logo .logoImg {
+        height: 70px; }
+    nav ul {
+      float: none;
+      padding: 0;
+      margin: auto;
+      position: fixed;
+      z-index: 4;
+      top: 80px;
+      right: 0;
+      left: 100%;
+      bottom: 0;
+      width: auto;
+      height: calc(100vh - 80px);
+      flex-direction: column;
+      justify-content: start;
+      background-color: rgba(5, 5, 5, 0.9);
+      overflow: hidden;
+      transition: all 0.25s ease-in-out; }
+      nav ul li {
+        margin: 2rem; }
+  footer .footerContenido img {
+    width: 40vw; } }
+
 /* Laptop */
+@media only screen and (min-width: 1026px) and (max-width: 1280px) {
+  footer .footerContenido img {
+    width: 40vw; } }

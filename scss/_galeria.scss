@@ -2,12 +2,11 @@
 
 .galeriaTitulo{
     @include titulos;
-    margin-top: 140px;
+    margin-top: 150px;
 }
 .galeria{
     width: 85%;
     margin: auto;
-    margin-bottom: 150px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 200px 200px;
@@ -23,7 +22,7 @@
             }
             &:hover .galeriaTexto{
                 opacity: 1;
-                padding: 1em;
+                padding: 12px;
                 width: 100%;
                 animation: haciaAbajo 0.3s linear;
             }
