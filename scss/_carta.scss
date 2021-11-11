@@ -6,4 +6,56 @@
 .carta{
     width: 85%;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "bebidas entradas"
+    "principal guarniciones";
+    justify-items: center;
+    .plato{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 180px;
+            height: 180px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            margin-right: 30px;
+            border-radius: 50%;
+            border: 3px solid $border;
+            padding: 3px;
+            transition: all 0.4s ease;
+        }
+    }
+    .bebidas{
+        grid-area: bebidas;
+        width: 50%;
+        .bebidasSubtitulo{
+            @include subtitulo;
+        }
+    }
+    .entradas{
+        grid-area: entradas;
+        width: 50%;
+        .entradasSubtitulo{
+            @include subtitulo;
+        }
+    }
+    .principal{
+        grid-area: principal;
+        width: 50%;
+        .principalSubtitulo{
+            @include subtitulo;
+        }
+    }
+    .guarniciones{
+        grid-area: guarniciones;
+        width: 50%;
+        .guarnicionesSubtitulo{
+            @include subtitulo;
+        }
+    }
 }

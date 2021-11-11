@@ -1,19 +1,25 @@
+@mixin efectoBlur {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 @mixin titulo {
     text-align: center;
     margin: 150px 60px 60px 60px;
     width: auto;
     h2{
-        text-transform: capitalize;
-        font-size: 36px;
         position: relative;
         display: inline-block;
+        font-size: 36px;
         padding-bottom: 10px;
+        text-transform: capitalize;
         &::before{
             position: absolute;
             content: "";
             width: 50%;
             height: 2px;
-            background-color: $titulosBefore;
+            background-color: $titulosPseudoElementos;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
@@ -22,6 +28,32 @@
             display: block;
             font-size: 16px;
             font-style: italic;
+        }
+    }
+}
+
+@mixin subtitulo {
+    text-align: center;
+    margin: 30px;
+    width: auto;
+    h3{
+        position: relative;
+        display: inline-block;
+        font-size: 28px;
+        text-transform: capitalize;
+        &::after, &::before{
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background-color: $titulosPseudoElementos;
+            top: 0.6em;
+        }
+        &::before{
+            right: -35px;
+        }
+        &::after{
+            left: -35px;
         }
     }
 }
