@@ -352,13 +352,15 @@ footer {
       font-style: italic; }
 
 .carta {
-  width: 100%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "bebidas entradas" "principal guarniciones";
-  justify-items: center; }
+  justify-items: center;
+  grid-column-gap: 10vw;
+  grid-row-gap: 5vh; }
   .carta .plato {
     display: flex;
     justify-content: space-between;
@@ -382,7 +384,7 @@ footer {
       padding: 3px;
       transition: all 0.3s ease; }
     .carta .plato .platoDesc {
-      float: left; }
+      width: 100%; }
       .carta .plato .platoDesc h4 {
         text-transform: capitalize;
         font-size: 22px;
@@ -397,8 +399,7 @@ footer {
         font-size: 14px;
         font-style: italic; }
   .carta .bebidas {
-    grid-area: bebidas;
-    width: 50%; }
+    grid-area: bebidas; }
     .carta .bebidas .bebidasSubtitulo {
       text-align: center;
       margin: 30px;
@@ -407,7 +408,7 @@ footer {
       .carta .bebidas .bebidasSubtitulo h3 {
         position: relative;
         display: inline-block;
-        font-size: 28px;
+        font-size: 32px;
         text-transform: capitalize; }
         .carta .bebidas .bebidasSubtitulo h3::after, .carta .bebidas .bebidasSubtitulo h3::before {
           content: '';
@@ -421,8 +422,7 @@ footer {
         .carta .bebidas .bebidasSubtitulo h3::after {
           left: -70px; }
   .carta .entradas {
-    grid-area: entradas;
-    width: 50%; }
+    grid-area: entradas; }
     .carta .entradas .entradasSubtitulo {
       text-align: center;
       margin: 30px;
@@ -431,7 +431,7 @@ footer {
       .carta .entradas .entradasSubtitulo h3 {
         position: relative;
         display: inline-block;
-        font-size: 28px;
+        font-size: 32px;
         text-transform: capitalize; }
         .carta .entradas .entradasSubtitulo h3::after, .carta .entradas .entradasSubtitulo h3::before {
           content: '';
@@ -445,8 +445,7 @@ footer {
         .carta .entradas .entradasSubtitulo h3::after {
           left: -70px; }
   .carta .principal {
-    grid-area: principal;
-    width: 50%; }
+    grid-area: principal; }
     .carta .principal .principalSubtitulo {
       text-align: center;
       margin: 30px;
@@ -455,7 +454,7 @@ footer {
       .carta .principal .principalSubtitulo h3 {
         position: relative;
         display: inline-block;
-        font-size: 28px;
+        font-size: 32px;
         text-transform: capitalize; }
         .carta .principal .principalSubtitulo h3::after, .carta .principal .principalSubtitulo h3::before {
           content: '';
@@ -469,8 +468,7 @@ footer {
         .carta .principal .principalSubtitulo h3::after {
           left: -70px; }
   .carta .guarniciones {
-    grid-area: guarniciones;
-    width: 50%; }
+    grid-area: guarniciones; }
     .carta .guarniciones .guarnicionesSubtitulo {
       text-align: center;
       margin: 30px;
@@ -479,7 +477,7 @@ footer {
       .carta .guarniciones .guarnicionesSubtitulo h3 {
         position: relative;
         display: inline-block;
-        font-size: 28px;
+        font-size: 32px;
         text-transform: capitalize; }
         .carta .guarniciones .guarnicionesSubtitulo h3::after, .carta .guarniciones .guarnicionesSubtitulo h3::before {
           content: '';

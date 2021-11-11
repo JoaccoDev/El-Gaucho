@@ -4,7 +4,7 @@
     @include titulo;
 }
 .carta{
-    width: 100%;
+    width: 85%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,6 +13,8 @@
     "bebidas entradas"
     "principal guarniciones";
     justify-items: center;
+    grid-column-gap: 10vw;
+    grid-row-gap: 5vh;
     .plato{
         display: flex;
         justify-content: space-between;
@@ -41,7 +43,7 @@
             transition: all 0.3s ease;
         }
         .platoDesc{
-            float: left;
+            width: 100%;
             h4{
                 text-transform: capitalize;
                 font-size: 22px;
@@ -62,28 +64,24 @@
     }
     .bebidas{
         grid-area: bebidas;
-        width: 50%;
         .bebidasSubtitulo{
             @include subtitulo;
         }
     }
     .entradas{
         grid-area: entradas;
-        width: 50%;
         .entradasSubtitulo{
             @include subtitulo;
         }
     }
     .principal{
         grid-area: principal;
-        width: 50%;
         .principalSubtitulo{
             @include subtitulo;
         }
     }
     .guarniciones{
         grid-area: guarniciones;
-        width: 50%;
         .guarnicionesSubtitulo{
             @include subtitulo;
         }
