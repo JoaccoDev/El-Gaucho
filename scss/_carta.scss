@@ -4,7 +4,7 @@
     @include titulo;
 }
 .carta{
-    width: 85%;
+    width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -64,24 +64,28 @@
     }
     .bebidas{
         grid-area: bebidas;
+        width: 100%;
         .bebidasSubtitulo{
             @include subtitulo;
         }
     }
     .entradas{
         grid-area: entradas;
+        width: 100%;
         .entradasSubtitulo{
             @include subtitulo;
         }
     }
     .principal{
         grid-area: principal;
+        width: 100%;
         .principalSubtitulo{
             @include subtitulo;
         }
     }
     .guarniciones{
         grid-area: guarniciones;
+        width: 100%;
         .guarnicionesSubtitulo{
             @include subtitulo;
         }

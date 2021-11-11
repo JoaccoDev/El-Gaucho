@@ -352,7 +352,7 @@ footer {
       font-style: italic; }
 
 .carta {
-  width: 85%;
+  width: 75%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -399,7 +399,8 @@ footer {
         font-size: 14px;
         font-style: italic; }
   .carta .bebidas {
-    grid-area: bebidas; }
+    grid-area: bebidas;
+    width: 100%; }
     .carta .bebidas .bebidasSubtitulo {
       text-align: center;
       margin: 30px;
@@ -422,7 +423,8 @@ footer {
         .carta .bebidas .bebidasSubtitulo h3::after {
           left: -70px; }
   .carta .entradas {
-    grid-area: entradas; }
+    grid-area: entradas;
+    width: 100%; }
     .carta .entradas .entradasSubtitulo {
       text-align: center;
       margin: 30px;
@@ -445,7 +447,8 @@ footer {
         .carta .entradas .entradasSubtitulo h3::after {
           left: -70px; }
   .carta .principal {
-    grid-area: principal; }
+    grid-area: principal;
+    width: 100%; }
     .carta .principal .principalSubtitulo {
       text-align: center;
       margin: 30px;
@@ -468,7 +471,8 @@ footer {
         .carta .principal .principalSubtitulo h3::after {
           left: -70px; }
   .carta .guarniciones {
-    grid-area: guarniciones; }
+    grid-area: guarniciones;
+    width: 100%; }
     .carta .guarniciones .guarnicionesSubtitulo {
       text-align: center;
       margin: 30px;
