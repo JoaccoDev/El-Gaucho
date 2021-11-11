@@ -4,7 +4,7 @@
     @include titulo;
 }
 .carta{
-    width: 85%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,18 +16,48 @@
     .plato{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border;
+        flex-direction: row;
+        flex-basis: 580px;
+        align-items: center;
+        &:hover{
+            img{
+                border-radius: 0;
+            }
+        }
+        &:nth-child(5){
+            border-bottom: 0;
+            margin-bottom: 40px;
+        }
         img{
-            width: 180px;
-            height: 180px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
+            width: 150px;
+            height: 150px;
             margin-right: 30px;
             border-radius: 50%;
             border: 3px solid $border;
             padding: 3px;
-            transition: all 0.4s ease;
+            transition: all 0.3s ease;
+        }
+        .platoDesc{
+            float: left;
+            h4{
+                text-transform: capitalize;
+                font-size: 22px;
+                border-bottom: 1px dashed $border;
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                font-family: $roboto;
+                span{
+                    float: right;
+                    color: $titulosPseudoElementos;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-style: italic;
+            }
         }
     }
     .bebidas{

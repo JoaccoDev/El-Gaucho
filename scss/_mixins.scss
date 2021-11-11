@@ -36,6 +36,7 @@
     text-align: center;
     margin: 30px;
     width: auto;
+    margin-top: 50px;
     h3{
         position: relative;
         display: inline-block;
@@ -44,16 +45,16 @@
         &::after, &::before{
             content: '';
             position: absolute;
-            width: 22px;
+            width: 50px;
             height: 2px;
             background-color: $titulosPseudoElementos;
             top: 0.6em;
         }
         &::before{
-            right: -35px;
+            right: -70px;
         }
         &::after{
-            left: -35px;
+            left: -70px;
         }
     }
 }

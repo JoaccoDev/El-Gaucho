@@ -352,7 +352,7 @@ footer {
       font-style: italic; }
 
 .carta {
-  width: 85%;
+  width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -361,26 +361,49 @@ footer {
   justify-items: center; }
   .carta .plato {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #A67A53;
+    flex-direction: row;
+    flex-basis: 580px;
+    align-items: center; }
+    .carta .plato:hover img {
+      border-radius: 0; }
+    .carta .plato:nth-child(5) {
+      border-bottom: 0;
+      margin-bottom: 40px; }
     .carta .plato img {
-      width: 180px;
-      height: 180px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      overflow: hidden;
+      width: 150px;
+      height: 150px;
       margin-right: 30px;
       border-radius: 50%;
       border: 3px solid #A67A53;
       padding: 3px;
-      transition: all 0.4s ease; }
+      transition: all 0.3s ease; }
+    .carta .plato .platoDesc {
+      float: left; }
+      .carta .plato .platoDesc h4 {
+        text-transform: capitalize;
+        font-size: 22px;
+        border-bottom: 1px dashed #A67A53;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-family: "Roboto Mono", monospace; }
+        .carta .plato .platoDesc h4 span {
+          float: right;
+          color: #ff7620; }
+      .carta .plato .platoDesc p {
+        font-size: 14px;
+        font-style: italic; }
   .carta .bebidas {
     grid-area: bebidas;
     width: 50%; }
     .carta .bebidas .bebidasSubtitulo {
       text-align: center;
       margin: 30px;
-      width: auto; }
+      width: auto;
+      margin-top: 50px; }
       .carta .bebidas .bebidasSubtitulo h3 {
         position: relative;
         display: inline-block;
@@ -389,21 +412,22 @@ footer {
         .carta .bebidas .bebidasSubtitulo h3::after, .carta .bebidas .bebidasSubtitulo h3::before {
           content: '';
           position: absolute;
-          width: 22px;
+          width: 50px;
           height: 2px;
           background-color: #ff7620;
           top: 0.6em; }
         .carta .bebidas .bebidasSubtitulo h3::before {
-          right: -35px; }
+          right: -70px; }
         .carta .bebidas .bebidasSubtitulo h3::after {
-          left: -35px; }
+          left: -70px; }
   .carta .entradas {
     grid-area: entradas;
     width: 50%; }
     .carta .entradas .entradasSubtitulo {
       text-align: center;
       margin: 30px;
-      width: auto; }
+      width: auto;
+      margin-top: 50px; }
       .carta .entradas .entradasSubtitulo h3 {
         position: relative;
         display: inline-block;
@@ -412,21 +436,22 @@ footer {
         .carta .entradas .entradasSubtitulo h3::after, .carta .entradas .entradasSubtitulo h3::before {
           content: '';
           position: absolute;
-          width: 22px;
+          width: 50px;
           height: 2px;
           background-color: #ff7620;
           top: 0.6em; }
         .carta .entradas .entradasSubtitulo h3::before {
-          right: -35px; }
+          right: -70px; }
         .carta .entradas .entradasSubtitulo h3::after {
-          left: -35px; }
+          left: -70px; }
   .carta .principal {
     grid-area: principal;
     width: 50%; }
     .carta .principal .principalSubtitulo {
       text-align: center;
       margin: 30px;
-      width: auto; }
+      width: auto;
+      margin-top: 50px; }
       .carta .principal .principalSubtitulo h3 {
         position: relative;
         display: inline-block;
@@ -435,21 +460,22 @@ footer {
         .carta .principal .principalSubtitulo h3::after, .carta .principal .principalSubtitulo h3::before {
           content: '';
           position: absolute;
-          width: 22px;
+          width: 50px;
           height: 2px;
           background-color: #ff7620;
           top: 0.6em; }
         .carta .principal .principalSubtitulo h3::before {
-          right: -35px; }
+          right: -70px; }
         .carta .principal .principalSubtitulo h3::after {
-          left: -35px; }
+          left: -70px; }
   .carta .guarniciones {
     grid-area: guarniciones;
     width: 50%; }
     .carta .guarniciones .guarnicionesSubtitulo {
       text-align: center;
       margin: 30px;
-      width: auto; }
+      width: auto;
+      margin-top: 50px; }
       .carta .guarniciones .guarnicionesSubtitulo h3 {
         position: relative;
         display: inline-block;
@@ -458,14 +484,14 @@ footer {
         .carta .guarniciones .guarnicionesSubtitulo h3::after, .carta .guarniciones .guarnicionesSubtitulo h3::before {
           content: '';
           position: absolute;
-          width: 22px;
+          width: 50px;
           height: 2px;
           background-color: #ff7620;
           top: 0.6em; }
         .carta .guarniciones .guarnicionesSubtitulo h3::before {
-          right: -35px; }
+          right: -70px; }
         .carta .guarniciones .guarnicionesSubtitulo h3::after {
-          left: -35px; }
+          left: -70px; }
 
 /* Contacto */
 .contactoTitulo {
