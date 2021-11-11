@@ -58,10 +58,11 @@
     }
     .galeria{
         grid-template-columns: 1fr;
-        .columnSpan1, .columnSpan2, .columnSpan3, .columnSpan4, .columnSpan5, .columnSpan6{
+        grid-auto-rows: 250px;
+        .columnSpan1, .columnSpan2, .columnSpan3{
             grid-column: span 1;
         }
-        .rowSpan1, .rowSpan2, .rowSpan3, .rowSpan4, .rowSpan5, .rowSpan6{
+        .rowSpan1, .rowSpan2, .rowSpan3{
             grid-row: span 1;
         }
     }
@@ -128,10 +129,10 @@
     .galeria{
         grid-template-columns: 1fr;
         grid-auto-rows: 300px;
-        .columnSpan1, .columnSpan2, .columnSpan3, .columnSpan4, .columnSpan5, .columnSpan6{
+        .columnSpan1, .columnSpan2, .columnSpan3{
             grid-column: span 1;
         }
-        .rowSpan1, .rowSpan2, .rowSpan3, .rowSpan4, .rowSpan5, .rowSpan6{
+        .rowSpan1, .rowSpan2, .rowSpan3{
             grid-row: span 1;
         }
     }

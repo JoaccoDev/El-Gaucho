@@ -1,8 +1,7 @@
 /* Galería */
 
 .galeriaTitulo{
-    @include titulos;
-    margin-top: 150px;
+    @include titulo;
 }
 .galeria{
     width: 85%;

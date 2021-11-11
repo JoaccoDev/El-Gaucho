@@ -169,7 +169,7 @@ footer {
 
 .Index-gridContainer {
   width: 85%;
-  margin: 70px auto 0 auto;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -179,8 +179,9 @@ footer {
     grid-area: nosotros; }
     .Index-gridContainer .gridNosotros .nosotrosTitulo {
       text-align: center;
-      margin: 60px;
-      width: auto; }
+      margin: 150px 60px 60px 60px;
+      width: auto;
+      margin-top: 100px; }
       .Index-gridContainer .gridNosotros .nosotrosTitulo h2 {
         text-transform: capitalize;
         font-size: 36px;
@@ -210,8 +211,9 @@ footer {
     margin: auto; }
     .Index-gridContainer .gridCarousel .carouselTitulo {
       text-align: center;
-      margin: 60px;
-      width: auto; }
+      margin: 150px 60px 60px 60px;
+      width: auto;
+      margin-top: 100px; }
       .Index-gridContainer .gridCarousel .carouselTitulo h2 {
         text-transform: capitalize;
         font-size: 36px;
@@ -235,9 +237,8 @@ footer {
 /* Galería */
 .galeriaTitulo {
   text-align: center;
-  margin: 60px;
-  width: auto;
-  margin-top: 150px; }
+  margin: 150px 60px 60px 60px;
+  width: auto; }
   .galeriaTitulo h2 {
     text-transform: capitalize;
     font-size: 36px;
@@ -326,7 +327,59 @@ footer {
     top: 50%; } }
 
 /* Carta */
+.cartaTitulo {
+  text-align: center;
+  margin: 150px 60px 60px 60px;
+  width: auto; }
+  .cartaTitulo h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; }
+    .cartaTitulo h2::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: #ff7620;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+    .cartaTitulo h2 span {
+      display: block;
+      font-size: 16px;
+      font-style: italic; }
+
+.carta {
+  width: 85%;
+  margin: auto; }
+
 /* Contacto */
+.contactoTitulo {
+  text-align: center;
+  margin: 150px 60px 60px 60px;
+  width: auto; }
+  .contactoTitulo h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px; }
+    .contactoTitulo h2::before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: #ff7620;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+    .contactoTitulo h2 span {
+      display: block;
+      font-size: 16px;
+      font-style: italic; }
+
 /* Media Querys */
 /* Celulares pequeños */
 @media only screen and (max-width: 320px) {
@@ -368,10 +421,11 @@ footer {
   footer .footerRedes a i {
     font-size: 0.8rem; }
   .galeria {
-    grid-template-columns: 1fr; }
-    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px; }
+    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3 {
       grid-column: span 1; }
-    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
+    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3 {
       grid-row: span 1; } }
 
 /* Celulares standard */
@@ -416,9 +470,9 @@ footer {
   .galeria {
     grid-template-columns: 1fr;
     grid-auto-rows: 300px; }
-    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3, .galeria .columnSpan4, .galeria .columnSpan5, .galeria .columnSpan6 {
+    .galeria .columnSpan1, .galeria .columnSpan2, .galeria .columnSpan3 {
       grid-column: span 1; }
-    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3, .galeria .rowSpan4, .galeria .rowSpan5, .galeria .rowSpan6 {
+    .galeria .rowSpan1, .galeria .rowSpan2, .galeria .rowSpan3 {
       grid-row: span 1; } }
 
 /* Celulares grandes */
