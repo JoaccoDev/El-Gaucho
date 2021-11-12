@@ -12,7 +12,8 @@ body{
     width: 100%;
     color: $letras;
     background-color: $bg2;
-    font-family: $raleway
+    font-family: $raleway;
+    overflow-x: hidden;
 }
 
 @import "header";

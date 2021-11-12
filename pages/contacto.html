@@ -25,7 +25,7 @@
     <title>El Gaucho - Ponete en contacto</title>
 </head>
 <body>
-    <header>    <!-- Header del sitio con logo redireccionable al index y menú de navegación -->
+    <header>    <!-- Header del sitio con logo redireccionable al index y menú de navegación. -->
         <h1>Parrilla El Gaucho</h1>
         <nav>
             <input type="checkbox" id="check">
@@ -44,13 +44,66 @@
         </nav>
     </header>
     <main>
-        <div class="contactoTitulo">
+        <div class="contactoTitulo wow animate__animated animate__flipInX">
             <h2><span>Siempre a tu disposición</span>Ponete en contacto</h2>
         </div>
+        <!-- Sección de contacto con todos los datos de contacto, un formulario y un mapa interactivo del local de la empresa. -->
         <section class="contacto">
+<!--             <div class="contactoContenido">
+                <h3>Envíanos un mensaje.</h3>
+                <p>Si tiene alguna sugerencia, duda, queja o está buscando empleo puede llenar el formulario y nos pondremos en contacto con usted a la brevedad, o puede contactarnos directamente con la información brindada.</p>
+            </div> -->
+            <div class="contactoContainer">
+                <div class="contactoInfo">
+                    <div class="infoCaja">
+                        <div class="icono"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                        <div class="texto">
+                            <h4>Dirección</h4>
+                            <p>Buenos Aires, Quilmes.<br>
+                            Lavalle 352, esquina Conesa.</p>
+                        </div>
+                    </div>
+                    <div class="infoCaja">
+                        <div class="icono"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                        <div class="texto">
+                            <h4>Teléfonos</h4>
+                            <p>Llamadas: 7503 2096<br>
+                            WhatsApp: 11 2792-7281</p>
+                        </div>
+                    </div>
+                    <div class="infoCaja">
+                        <div class="icono"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="texto">
+                            <h4>Email</h4>
+                            <p>ParrillaElGauchoQuilmes@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactoFormulario">
+                    <h3>Envíanos un mensaje.</h3>
+                    <p>Si tiene alguna sugerencia, duda, queja o está buscando empleo puede llenar el formulario y nos pondremos en contacto con usted a la brevedad, o puede contactarnos directamente con la información brindada.</p>
+                    <form action="#">
+                        <div>
+                            <label for="nombre"></label>
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" name="email" placeholder="Email de contacto" required>
+                        </div>
+                        <div>
+                            <label for="mensaje"></label>
+                            <textarea name="mensaje"></textarea>
+                        </div>
+                        <div>
+                            <input type="button" value="Enviar mensaje." placeholder="Escribe tu mensaje..." required>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>    <!-- Footer de la página con copyright de la empresa y redes sociales (y créditos al desarrollador) -->
+    <footer>    <!-- Footer de la página con copyright de la empresa y redes sociales (y créditos al desarrollador). -->
         <div class="footerContenido">
             <a href="../index.html"><img src="../assets/img/logo-footer.png" alt="Logo"></a>
             <ul class="footerRedes">
@@ -71,7 +124,7 @@
     <script>
         new WOW().init();
     </script>
-    <!-- Script para deshabilitar el scroll al abrir el navbar hamburguesa (mobile) -->
+    <!-- Script para deshabilitar el scroll al abrir el navbar hamburguesa (mobile). -->
     <style>
         .scroll{
             overflow: hidden;

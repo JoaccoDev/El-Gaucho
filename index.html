@@ -25,7 +25,7 @@
     <title>El Gaucho - Inicio</title>
 </head>
 <body>
-    <header>    <!-- Header del sitio con logo redireccionable al index y menú de navegación -->
+    <header>    <!-- Header del sitio con logo redireccionable al index y menú de navegación. -->
         <h1>Parrilla El Gaucho</h1>
         <nav>
             <input type="checkbox" id="check">
@@ -44,6 +44,7 @@
         </nav>
     </header>
     <main>
+        <!-- Sección 1: Imagen de fondo con height: 100vh y una caja en el centro de la imagen. -->
         <section class="Index-bgImg">
             <div class="bgImgCaja">
                 <h2>¡No te quedes con las ganas!</h2>
@@ -51,6 +52,7 @@
             </div>
             <div class="bgImgFixed"></div>
         </section>
+        <!-- Sección 2: Texto de la historia de la empresa y recomendaciones del chef. -->
         <section class="Index-gridContainer">
             <div class="gridNosotros wow animate__animated animate__fadeInRight">
                 <div class="nosotrosTitulo">
@@ -58,6 +60,7 @@
                 </div>
                 <p>La Parrilla El Gaucho fue fundada en 2010 con el objetivo de ser los mejores en lo que hacemos, y lo estamos logrando.<br><br>Somos una PyME familiar con la mejor calidad en carnes de todo el área, contamos con una ámplia experiencia en el sector de gastronomía formada durante años y un público que avala nuestra reputación, lograda con mucho esfuerzo y sacrificio a lo largo del tiempo.<br>Siempre estamos intentando perfeccionar nuestros cortes y hacer de nuestros platos los más ricos y más sabrosos, para que puedas disfrutar de la mejor experiencia en carnes a la parrilla que puedas encontrar.<br>¡Te esperamos!</p>
             </div>
+            <!-- Carousel agregado con Bootstrap. -->
             <div class="gridCarousel wow animate__animated animate__fadeInLeft">
                 <div class="carouselTitulo">
                     <h2><span>Nuestros mejores platos</span>Recomendaciones</h2>
@@ -99,7 +102,7 @@
             </div>
         </section>
     </main>
-    <footer>    <!-- Footer de la página con copyright de la empresa y redes sociales (y créditos al desarrollador) -->
+    <footer>    <!-- Footer de la página con copyright de la empresa y redes sociales (y créditos al desarrollador). -->
         <div class="footerContenido">
             <a href="./index.html"><img src="./assets/img/logo-footer.png" alt="Logo"></a>
             <ul class="footerRedes">
@@ -120,7 +123,7 @@
     <script>
         new WOW().init();
     </script>
-    <!-- Script para deshabilitar el scroll al abrir el navbar hamburguesa (mobile) -->
+    <!-- Script para deshabilitar el scroll al abrir el navbar hamburguesa (mobile). -->
     <style>
         .scroll{
             overflow: hidden;
