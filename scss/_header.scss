@@ -35,7 +35,7 @@ nav{
     }
     ul{
         float: right;
-        width: 45%;
+        width: 55%;
         height: 100%;
         display: flex;
         justify-content: space-around;
@@ -45,7 +45,7 @@ nav{
             a{
                 text-decoration: none;
                 display: block;
-                padding: 12px 40px;
+                padding: 12px 30px;
                 font-size: 22px;
                 text-transform: uppercase;
                 color: $letras;
