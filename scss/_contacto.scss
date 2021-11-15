@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: $poppins;
     margin: 12vh auto 30vh auto;
     .contactoContainer{
         width: 80%;
@@ -16,11 +16,13 @@
         border-radius: 6px;
         border: 3px solid $border;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-        padding: 30px 60px 40px 40px;
+        padding: 30px 60px 30px 60px;
         .contactoFormulario{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-top: 40px;
+            margin-right: 40px;
             .datos{
                 width: 25%;
                 height: 100%;
@@ -28,7 +30,6 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                margin-top: 15px;
                 position: relative;
                 &::before{
                     content: "";
@@ -38,7 +39,7 @@
                     right: -15px;
                     top: 50%;
                     transform: translateY(-50%);
-                    background-color: #afafb6;
+                    background-color: $titulosPseudoElementos;
                 }
                 .datosInfo{
                     margin: 14px;
@@ -102,7 +103,16 @@
             }
         }
         .contactoMapa{
-            
+            margin: auto;
+            .mapaSubtitulo{
+                @include subtitulo;
+                margin-top: 100px;
+            }
+            iframe{
+                width: 100%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
         }
     }
 }
