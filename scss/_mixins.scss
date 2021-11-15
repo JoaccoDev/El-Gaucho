@@ -58,3 +58,14 @@
         }
     }
 }
+
+@mixin contacto ($padding) {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+    padding: $padding;
+    resize: none;
+}
