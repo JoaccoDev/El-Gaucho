@@ -56,23 +56,53 @@
             }
         }
     }
-    .columnSpan1{
-        grid-column: span 1;
-    }
-    .columnSpan2{
+    .foto1{
         grid-column: span 2;
-    }
-    .columnSpan3{
-        grid-column: span 3;
-    }
-    .rowSpan1{
-        grid-row: span 1;
-    }
-    .rowSpan2{
         grid-row: span 2;
     }
-    .rowSpan3{
+    .foto2{
+        grid-column: span 1;
         grid-row: span 3;
+    }
+    .foto3{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .foto4{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .foto5{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .foto6{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .foto7{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .foto8{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .foto9{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .foto10{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .foto11{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .foto12{
+        grid-column: span 2;
+        grid-row: span 1;
     }
 }
 
