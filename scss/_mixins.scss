@@ -67,6 +67,13 @@
             left: -70px;
         }
     }
+    @media only screen and (max-width:494px) {
+        margin: 100px 20px 50px 20px;
+        width: auto;
+        h3{
+            font-size: 22px;
+        }
+    }
 }
 
 @mixin contacto ($padding) {

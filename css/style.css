@@ -412,15 +412,15 @@ footer {
           font-size: 14px; } }
 
 .carta {
-  width: 75%;
+  width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "bebidas entradas" "principal guarniciones";
   justify-items: center;
-  grid-column-gap: 10vw;
-  grid-row-gap: 5vh; }
+  grid-column-gap: 8vw;
+  grid-row-gap: 8vh; }
   .carta .plato {
     display: flex;
     justify-content: space-between;
@@ -482,6 +482,12 @@ footer {
           right: -70px; }
         .carta .bebidas .bebidasSubtitulo h3::after {
           left: -70px; }
+      @media only screen and (max-width: 494px) {
+        .carta .bebidas .bebidasSubtitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .carta .bebidas .bebidasSubtitulo h3 {
+            font-size: 22px; } }
   .carta .entradas {
     grid-area: entradas;
     width: 100%; }
@@ -506,6 +512,12 @@ footer {
           right: -70px; }
         .carta .entradas .entradasSubtitulo h3::after {
           left: -70px; }
+      @media only screen and (max-width: 494px) {
+        .carta .entradas .entradasSubtitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .carta .entradas .entradasSubtitulo h3 {
+            font-size: 22px; } }
   .carta .principal {
     grid-area: principal;
     width: 100%; }
@@ -530,6 +542,12 @@ footer {
           right: -70px; }
         .carta .principal .principalSubtitulo h3::after {
           left: -70px; }
+      @media only screen and (max-width: 494px) {
+        .carta .principal .principalSubtitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .carta .principal .principalSubtitulo h3 {
+            font-size: 22px; } }
   .carta .guarniciones {
     grid-area: guarniciones;
     width: 100%; }
@@ -554,6 +572,12 @@ footer {
           right: -70px; }
         .carta .guarniciones .guarnicionesSubtitulo h3::after {
           left: -70px; }
+      @media only screen and (max-width: 494px) {
+        .carta .guarniciones .guarnicionesSubtitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .carta .guarniciones .guarnicionesSubtitulo h3 {
+            font-size: 22px; } }
 
 /* Contacto */
 .contactoTitulo {
@@ -709,6 +733,12 @@ footer {
             right: -70px; }
           .contacto .contactoContainer .contactoMapa .mapaSubtitulo h3::after {
             left: -70px; }
+        @media only screen and (max-width: 494px) {
+          .contacto .contactoContainer .contactoMapa .mapaSubtitulo {
+            margin: 100px 20px 50px 20px;
+            width: auto; }
+            .contacto .contactoContainer .contactoMapa .mapaSubtitulo h3 {
+              font-size: 22px; } }
       .contacto .contactoContainer .contactoMapa iframe {
         width: 100%;
         margin: auto;
@@ -808,6 +838,18 @@ footer {
       grid-column: span 2;
       grid-row: span 1; }
   /* Carta */
+  .carta {
+    width: 85%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "bebidas" "entradas" "principal" "guarniciones";
+    grid-column-gap: 0;
+    grid-row-gap: 6vh; }
+    .carta .plato img {
+      width: 100px;
+      height: 100px; }
+    .carta .plato .platoDesc h4 {
+      font-size: 18px; }
   /* Contacto */ }
 
 /* Celulares standard */
@@ -903,6 +945,18 @@ footer {
       grid-column: span 2;
       grid-row: span 1; }
   /* Carta */
+  .carta {
+    width: 85%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "bebidas" "entradas" "principal" "guarniciones";
+    grid-column-gap: 0;
+    grid-row-gap: 6vh; }
+    .carta .plato img {
+      width: 135px;
+      height: 135px; }
+    .carta .plato .platoDesc h4 {
+      font-size: 20px; }
   /* Contacto */ }
 
 /* Celulares grandes */
@@ -992,6 +1046,13 @@ footer {
       grid-column: span 2;
       grid-row: span 2; }
   /* Carta */
+  .carta {
+    width: 70%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "bebidas" "entradas" "principal" "guarniciones";
+    grid-column-gap: 0;
+    grid-row-gap: 6vh; }
   /* Contacto */ }
 
 /* Tablet */
@@ -1064,7 +1125,18 @@ footer {
       grid-row: span 1; }
     .galeria .foto10 {
       grid-column: span 2;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  /* Carta */
+  .carta {
+    width: 90%;
+    grid-column-gap: 3vw;
+    grid-row-gap: 5vh; }
+    .carta .plato img {
+      width: 135px;
+      height: 135px; }
+    .carta .plato .platoDesc h4 {
+      font-size: 18px; }
+  /* Contacto */ }
 
 /* Laptop */
 @media only screen and (min-width: 1026px) and (max-width: 1280px) {
@@ -1110,4 +1182,10 @@ footer {
       grid-column: span 2;
       grid-row: span 1; }
   /* Carta */
+  .carta {
+    width: 90%;
+    grid-column-gap: 5vw;
+    grid-row-gap: 6vh; }
+    .carta .plato .platoDesc h4 {
+      font-size: 20px; }
   /* Contacto */ }

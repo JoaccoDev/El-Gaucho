@@ -4,7 +4,7 @@
     @include titulo;
 }
 .carta{
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,8 +13,8 @@
     "bebidas entradas"
     "principal guarniciones";
     justify-items: center;
-    grid-column-gap: 10vw;
-    grid-row-gap: 5vh;
+    grid-column-gap: 8vw;
+    grid-row-gap: 8vh;
     .plato{
         display: flex;
         justify-content: space-between;
