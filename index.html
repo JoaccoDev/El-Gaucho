@@ -43,8 +43,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <!-- Sección 1: Imagen de fondo con height: 100vh y una caja en el centro de la imagen. -->
+    <main class="indexConteiner">
+        <!-- Sección 1: Imagen de fondo con height: 101vh (para que funcionen las animaciones ".wow") y una caja en el centro de la imagen que redirecciona al WhatsApp de la empresa. -->
         <section class="Index-bgImg">
             <div class="bgImgCaja">
                 <h2>¡No te quedes con las ganas!</h2>
@@ -74,19 +74,19 @@
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="3000">
+                      <div class="carousel-item active" data-bs-interval="2500">
                         <img src="./assets/img/carousel/ojo-de-bife-con-hueso.png" class="d-block w-100" alt="Ojo de bife con hueso">
                       </div>
-                      <div class="carousel-item" data-bs-interval="3000">
+                      <div class="carousel-item" data-bs-interval="2500">
                         <img src="./assets/img/carousel/ribs-a-la-barbacoa.png" class="d-block w-100" alt="Ribs a la barbacoa">
                       </div>
-                      <div class="carousel-item" data-bs-interval="3000">
+                      <div class="carousel-item" data-bs-interval="2500">
                         <img src="./assets/img/carousel/provoleta.png" class="d-block w-100" alt="Provoleta">
                       </div>
-                      <div class="carousel-item" data-bs-interval="3000">
+                      <div class="carousel-item" data-bs-interval="2500">
                         <img src="./assets/img/carousel/ternera.png" class="d-block w-100" alt="Ternera">
                       </div>
-                      <div class="carousel-item" data-bs-interval="3000">
+                      <div class="carousel-item" data-bs-interval="2500">
                         <img src="./assets/img/carousel/lomo-jugoso.png" class="d-block w-100" alt="Lomo jugoso">
                       </div>
                     </div>
@@ -122,17 +122,6 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-    </script>
-    <!-- Script para deshabilitar el scroll al abrir el navbar hamburguesa (mobile). -->
-    <style>
-        .scroll{
-            overflow: hidden;
-            overflow-y: hidden;
-            overflow-x: hidden;
-        }
-    </style>
-    <script>
-        document.querySelector('.checkbtn').addEventListener('click', () => document.body.classList.toggle('scroll'));
     </script>
 </body>
 </html>

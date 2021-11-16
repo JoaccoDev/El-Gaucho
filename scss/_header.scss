@@ -4,7 +4,7 @@ h1{
     display: none;
 }
 nav{
-    z-index: 5;
+    z-index: 10;
     font-family: $montserrat;
     position: fixed;
     top: 0;
@@ -34,6 +34,7 @@ nav{
         }
     }
     ul{
+        z-index: 5;
         float: right;
         width: 55%;
         height: 100%;

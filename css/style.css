@@ -17,7 +17,7 @@ h1 {
   display: none; }
 
 nav {
-  z-index: 5;
+  z-index: 10;
   font-family: "Montserrat", sans-serif;
   position: fixed;
   top: 0;
@@ -43,6 +43,7 @@ nav {
     nav .logo .logoImg {
       height: 70px; }
   nav ul {
+    z-index: 5;
     float: right;
     width: 55%;
     height: 100%;
@@ -117,7 +118,7 @@ footer {
       margin: 0; }
 
 /* Index */
-.Index-bgImg .bgImgFixed {
+.indexConteiner .Index-bgImg .bgImgFixed {
   background: url(../assets/img/fondo-index.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -125,7 +126,7 @@ footer {
   background-attachment: fixed;
   height: 101vh; }
 
-.Index-bgImg .bgImgCaja {
+.indexConteiner .Index-bgImg .bgImgCaja {
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -145,14 +146,14 @@ footer {
   align-items: center;
   flex-direction: column;
   overflow: hidden; }
-  .Index-bgImg .bgImgCaja h2 {
+  .indexConteiner .Index-bgImg .bgImgCaja h2 {
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
     margin-bottom: 1rem;
     letter-spacing: 1px;
     word-spacing: 2px; }
-  .Index-bgImg .bgImgCaja a {
+  .indexConteiner .Index-bgImg .bgImgCaja a {
     margin-top: 1rem;
     padding: 0.6rem 4.3rem;
     background-color: #1a1a1a;
@@ -162,14 +163,14 @@ footer {
     font-size: 1.5rem;
     border: 5px solid #1a1a1a;
     transition-duration: 0.5s; }
-    .Index-bgImg .bgImgCaja a:hover {
+    .indexConteiner .Index-bgImg .bgImgCaja a:hover {
       color: #1a1a1a;
       background-color: blanchedalmond;
       border: 5px solid #1a1a1a;
       font-weight: bold;
       transform: scale(1.03); }
 
-.Index-gridContainer {
+.indexConteiner .Index-gridContainer {
   width: 85%;
   margin: 0 auto;
   display: grid;
@@ -177,20 +178,20 @@ footer {
   grid-template-rows: 1fr;
   gap: 5rem;
   grid-template-areas: "nosotros carousel"; }
-  .Index-gridContainer .gridNosotros {
+  .indexConteiner .Index-gridContainer .gridNosotros {
     grid-area: nosotros; }
-    .Index-gridContainer .gridNosotros .nosotrosTitulo {
+    .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo {
       text-align: center;
       margin: 150px 60px 60px 60px;
       width: auto;
       margin-top: 100px; }
-      .Index-gridContainer .gridNosotros .nosotrosTitulo h2 {
+      .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo h2 {
         position: relative;
         display: inline-block;
         font-size: 36px;
         padding-bottom: 10px;
         text-transform: capitalize; }
-        .Index-gridContainer .gridNosotros .nosotrosTitulo h2::before {
+        .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo h2::before {
           position: absolute;
           content: "";
           width: 50%;
@@ -199,30 +200,38 @@ footer {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridContainer .gridNosotros .nosotrosTitulo h2 span {
+        .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo h2 span {
           display: block;
           font-size: 16px;
           font-style: italic; }
-    .Index-gridContainer .gridNosotros p {
+      @media only screen and (max-width: 494px) {
+        .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo h2 {
+            font-size: 24px; }
+            .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo h2 span {
+              font-size: 14px; } }
+    .indexConteiner .Index-gridContainer .gridNosotros p {
       text-align: center;
       font-size: 22px;
       margin: auto; }
-  .Index-gridContainer .gridCarousel {
+  .indexConteiner .Index-gridContainer .gridCarousel {
     grid-area: carousel;
     max-width: 600px;
     margin: auto; }
-    .Index-gridContainer .gridCarousel .carouselTitulo {
+    .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
       text-align: center;
       margin: 150px 60px 60px 60px;
       width: auto;
       margin-top: 100px; }
-      .Index-gridContainer .gridCarousel .carouselTitulo h2 {
+      .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo h2 {
         position: relative;
         display: inline-block;
         font-size: 36px;
         padding-bottom: 10px;
         text-transform: capitalize; }
-        .Index-gridContainer .gridCarousel .carouselTitulo h2::before {
+        .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo h2::before {
           position: absolute;
           content: "";
           width: 50%;
@@ -231,10 +240,18 @@ footer {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
-        .Index-gridContainer .gridCarousel .carouselTitulo h2 span {
+        .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo h2 span {
           display: block;
           font-size: 16px;
           font-style: italic; }
+      @media only screen and (max-width: 494px) {
+        .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
+          margin: 100px 20px 50px 20px;
+          width: auto; }
+          .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo h2 {
+            font-size: 24px; }
+            .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo h2 span {
+              font-size: 14px; } }
 
 /* Galería */
 .galeriaTitulo {
@@ -260,6 +277,14 @@ footer {
       display: block;
       font-size: 16px;
       font-style: italic; }
+  @media only screen and (max-width: 494px) {
+    .galeriaTitulo {
+      margin: 100px 20px 50px 20px;
+      width: auto; }
+      .galeriaTitulo h2 {
+        font-size: 24px; }
+        .galeriaTitulo h2 span {
+          font-size: 14px; } }
 
 .galeria {
   width: 85%;
@@ -377,6 +402,14 @@ footer {
       display: block;
       font-size: 16px;
       font-style: italic; }
+  @media only screen and (max-width: 494px) {
+    .cartaTitulo {
+      margin: 100px 20px 50px 20px;
+      width: auto; }
+      .cartaTitulo h2 {
+        font-size: 24px; }
+        .cartaTitulo h2 span {
+          font-size: 14px; } }
 
 .carta {
   width: 75%;
@@ -546,6 +579,14 @@ footer {
       display: block;
       font-size: 16px;
       font-style: italic; }
+  @media only screen and (max-width: 494px) {
+    .contactoTitulo {
+      margin: 100px 20px 50px 20px;
+      width: auto; }
+      .contactoTitulo h2 {
+        font-size: 24px; }
+        .contactoTitulo h2 span {
+          font-size: 14px; } }
 
 .contacto {
   width: 100%;
@@ -674,8 +715,8 @@ footer {
         margin-bottom: 20px; }
 
 /* Media Querys */
-/* Celulares standard */
-@media only screen and (max-width: 640px) {
+/* Celulares pequeños */
+@media only screen and (max-width: 494px) {
   /* Header */
   nav {
     height: 60px; }
@@ -711,40 +752,141 @@ footer {
       nav ul li {
         margin: 2rem; }
   /* Footer */
-  footer .footerContenido img {
-    width: 60vw; }
-  footer .footerRedes a i {
-    font-size: 1.2rem; }
-  /* Index */
-  .Index-bgImg .bgImgCaja {
-    width: 100%;
-    height: 30%;
-    border: none;
-    border-radius: 0;
-    box-shadow: 0px 0px 8px 0px black; }
-    .Index-bgImg .bgImgCaja h2 {
-      font-size: 1.6rem; }
-    .Index-bgImg .bgImgCaja a {
-      padding: 2% 12%;
+  footer {
+    margin-top: 75px; }
+    footer .footerContenido img {
+      width: 60vw; }
+    footer .footerRedes a i {
       font-size: 1.2rem; }
-  .Index-gridContainer {
-    width: 100%;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.3fr 1fr;
-    gap: 0;
-    grid-template-areas: "nosotros" "carousel"; }
-    .Index-gridContainer .gridNosotros {
-      width: 80%;
-      margin: auto; }
-      .Index-gridContainer .gridNosotros .nosotrosTitulo {
-        margin-top: 50px; }
-      .Index-gridContainer .gridNosotros p {
-        font-size: 18px; }
-    .Index-gridContainer .gridCarousel {
-      max-width: 85%; }
-      .Index-gridContainer .gridCarousel .carouselTitulo {
-        margin-top: 50px; }
+  /* Index */
+  .indexConteiner {
+    width: 100%; }
+    .indexConteiner .bgImgFixed {
+      background-attachment: unset; }
+    .indexConteiner .Index-bgImg .bgImgCaja {
+      width: 100%;
+      height: 30%;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0px 0px 8px 0px black; }
+      .indexConteiner .Index-bgImg .bgImgCaja h2 {
+        font-size: 1.6rem; }
+      .indexConteiner .Index-bgImg .bgImgCaja a {
+        padding: 2% 12%;
+        font-size: 1.2rem; }
+    .indexConteiner .Index-gridContainer {
+      width: 100%;
+      margin: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.8fr 1fr;
+      gap: 0;
+      grid-template-areas: "nosotros" "carousel"; }
+      .indexConteiner .Index-gridContainer .gridNosotros {
+        width: 80%;
+        margin: auto; }
+        .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo {
+          margin-top: 50px; }
+        .indexConteiner .Index-gridContainer .gridNosotros p {
+          font-size: 18px; }
+      .indexConteiner .Index-gridContainer .gridCarousel {
+        max-width: 85%; }
+        .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
+          margin-top: 50px; }
+  /* Galería */
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px 200px; }
+    .galeria .galeriaContainer .galeriaItem .galeriaTexto {
+      font-size: 18px; }
+    .galeria .foto5 {
+      grid-column: span 1;
+      grid-row: span 2; }
+    .galeria .foto8 {
+      grid-column: span 1;
+      grid-row: span 2; }
+    .galeria .foto12 {
+      grid-column: span 2;
+      grid-row: span 1; }
+  /* Carta */
+  /* Contacto */ }
+
+/* Celulares standard */
+@media only screen and (min-width: 495px) and (max-width: 640px) {
+  /* Header */
+  nav {
+    height: 60px; }
+    nav .checkbtn {
+      display: block;
+      line-height: 60px;
+      font-size: 26px;
+      margin-right: 20px; }
+    nav #check:checked ~ ul {
+      left: 0; }
+    nav .logo {
+      line-height: 60px;
+      margin: 2px 0 0 30px; }
+      nav .logo .logoImg {
+        height: 50px; }
+    nav ul {
+      float: none;
+      padding: 0;
+      margin: auto;
+      position: fixed;
+      z-index: 4;
+      top: 60px;
+      right: 0;
+      left: 100%;
+      bottom: 0;
+      width: auto;
+      height: calc(100vh - 60px);
+      flex-direction: column;
+      justify-content: start;
+      background-color: rgba(5, 5, 5, 0.9);
+      overflow: hidden;
+      transition: all 0.25s ease-in-out; }
+      nav ul li {
+        margin: 2rem; }
+  /* Footer */
+  footer {
+    margin-top: 75px; }
+    footer .footerContenido img {
+      width: 60vw; }
+    footer .footerRedes a i {
+      font-size: 1.2rem; }
+  /* Index */
+  .indexConteiner {
+    width: 100%; }
+    .indexConteiner .bgImgFixed {
+      background-attachment: unset; }
+    .indexConteiner .Index-bgImg .bgImgCaja {
+      width: 100%;
+      height: 30%;
+      border: none;
+      border-radius: 0;
+      box-shadow: 0px 0px 8px 0px black; }
+      .indexConteiner .Index-bgImg .bgImgCaja h2 {
+        font-size: 1.6rem; }
+      .indexConteiner .Index-bgImg .bgImgCaja a {
+        padding: 2% 12%;
+        font-size: 1.2rem; }
+    .indexConteiner .Index-gridContainer {
+      width: 100%;
+      margin: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1.3fr 1fr;
+      gap: 0;
+      grid-template-areas: "nosotros" "carousel"; }
+      .indexConteiner .Index-gridContainer .gridNosotros {
+        width: 80%;
+        margin: auto; }
+        .indexConteiner .Index-gridContainer .gridNosotros .nosotrosTitulo {
+          margin-top: 50px; }
+        .indexConteiner .Index-gridContainer .gridNosotros p {
+          font-size: 18px; }
+      .indexConteiner .Index-gridContainer .gridCarousel {
+        max-width: 85%; }
+        .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
+          margin-top: 50px; }
   /* Galería */
   .galeria {
     grid-template-columns: repeat(2, 1fr);
@@ -805,27 +947,27 @@ footer {
     footer .footerContenido img {
       width: 50vw; }
   /* Index */
-  .Index-bgImg .bgImgCaja {
+  .indexConteiner .Index-bgImg .bgImgCaja {
     width: 70%;
     height: 30%; }
-    .Index-bgImg .bgImgCaja h2 {
+    .indexConteiner .Index-bgImg .bgImgCaja h2 {
       font-size: 1.7rem; }
-    .Index-bgImg .bgImgCaja a {
+    .indexConteiner .Index-bgImg .bgImgCaja a {
       padding: 10px 55px;
       font-size: 1.3rem; }
-  .Index-gridContainer {
+  .indexConteiner .Index-gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 0;
     grid-template-areas: "nosotros" "carousel"; }
-    .Index-gridContainer .gridNosotros {
+    .indexConteiner .Index-gridContainer .gridNosotros {
       width: 80%;
       margin: auto; }
-      .Index-gridContainer .gridNosotros p {
+      .indexConteiner .Index-gridContainer .gridNosotros p {
         font-size: 20px; }
-    .Index-gridContainer .gridCarousel {
+    .indexConteiner .Index-gridContainer .gridCarousel {
       max-width: 550px; }
-      .Index-gridContainer .gridCarousel .carouselTitulo {
+      .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
         margin-top: 50px; }
   /* Galería */
   .galeria {
@@ -892,24 +1034,24 @@ footer {
   footer .footerContenido img {
     width: 40vw; }
   /* Index */
-  .Index-bgImg .bgImgCaja {
+  .indexConteiner .Index-bgImg .bgImgCaja {
     width: 55%; }
-    .Index-bgImg .bgImgCaja h2 {
+    .indexConteiner .Index-bgImg .bgImgCaja h2 {
       font-size: 1.7rem; }
-    .Index-bgImg .bgImgCaja a {
+    .indexConteiner .Index-bgImg .bgImgCaja a {
       padding: 10px 55px;
       font-size: 1.4rem; }
-  .Index-gridContainer {
+  .indexConteiner .Index-gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: "nosotros" "carousel"; }
-    .Index-gridContainer .gridNosotros {
+    .indexConteiner .Index-gridContainer .gridNosotros {
       width: 80%;
       margin: auto; }
-      .Index-gridContainer .gridNosotros p {
+      .indexConteiner .Index-gridContainer .gridNosotros p {
         font-size: 22px; }
-    .Index-gridContainer .gridCarousel .carouselTitulo {
+    .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
       margin-top: 50px; }
   /* Galería */
   .galeria {
@@ -940,24 +1082,24 @@ footer {
   footer .footerContenido img {
     width: 40vw; }
   /* Index */
-  .Index-bgImg .bgImgCaja {
+  .indexConteiner .Index-bgImg .bgImgCaja {
     width: 50%; }
-    .Index-bgImg .bgImgCaja h2 {
+    .indexConteiner .Index-bgImg .bgImgCaja h2 {
       font-size: 1.8rem; }
-    .Index-bgImg .bgImgCaja a {
+    .indexConteiner .Index-bgImg .bgImgCaja a {
       padding: 10px 60px;
       font-size: 1.4rem; }
-  .Index-gridContainer {
+  .indexConteiner .Index-gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: "nosotros" "carousel"; }
-    .Index-gridContainer .gridNosotros {
+    .indexConteiner .Index-gridContainer .gridNosotros {
       width: 70%;
       margin: auto; }
-      .Index-gridContainer .gridNosotros p {
+      .indexConteiner .Index-gridContainer .gridNosotros p {
         font-size: 22px; }
-    .Index-gridContainer .gridCarousel .carouselTitulo {
+    .indexConteiner .Index-gridContainer .gridCarousel .carouselTitulo {
       margin-top: 50px; }
   /* Galeria */
   .galeria {
