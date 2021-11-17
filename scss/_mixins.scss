@@ -30,7 +30,7 @@
             font-style: italic;
         }
     }
-    @media only screen and (max-width:494px) {
+    @media only screen and (max-width:508px) {
         margin: 100px 20px 50px 20px;
         width: auto;
         h2{
@@ -67,16 +67,25 @@
             left: -70px;
         }
     }
-    @media only screen and (max-width:494px) {
+    @media only screen and (max-width:508px) {
         margin: 100px 20px 50px 20px;
         width: auto;
         h3{
             font-size: 22px;
+            &::after, &::before{
+                width: 30px;
+            }
+            &::before{
+                right: -40px;
+            }
+            &::after{
+                left: -40px;
+            }
         }
     }
 }
 
-@mixin contacto ($padding) {
+@mixin formularioContacto ($padding) {
     height: 100%;
     width: 100%;
     border: none;
