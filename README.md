@@ -14,12 +14,12 @@ Aspectos incluidos en la entrega:
 
 ## DEMO.
 
-Para ver la DEMO de mi proyecto final, simplemente [clickea en este mensaje](https://joagcoder.github.io/4ta-Entrega/).
+Para ver la DEMO de mi proyecto final, simplemente [clickea en este mensaje](https://joagcoder.github.io/ElGaucho/).
 
 ## Instalación.
 
 Cualquier persona es libre de poder descargar mis archivos ya sea para mirarlos más en profundidad, modificar algo o recomendarme cambios o mejoras que podrían ser pertinentes en el repositorio.
-> Para realizar una descarga de todo el repositorio, debes ir a [este link](https://github.com/JoagCoder/4ta-Entrega). Luego, haz click en el botón "Code" arriba a la derecha.
+> Para realizar una descarga de todo el repositorio, debes ir a [este link](https://github.com/JoagCoder/ElGaucho). Luego, haz click en el botón "Code" arriba a la derecha.
 >
 > Clickea donde dice "Download ZIP" y elije la ruta donde quieres tu descarga.
 
