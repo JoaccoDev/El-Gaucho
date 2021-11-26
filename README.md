@@ -27,15 +27,15 @@ Anyone is free to download my files either to look at them more in depth, modify
 
 Because the styles of my final project were applied from SASS and, although it is not necessary, it is recommended to use it to change the styles of the site. It is important to have NodeJS and NPM downloaded on your computer first, then follow the steps below.
 > Go to your console, go to the repository folder and use the command:
-`` `cmd
+```cmd
 npm install -D node-sass nodemon
-`` ''
+```
 > To generate the folder "node_modules".
 >
 > Then you must use the following command to keep track of the modifications made.
-`` `cmd
+```cmd
 npm run watch-css
-`` ''
+```
 Once this is done, all changes made to the files within the SCSS folder will also be automatically made to the CSS folder, as well as to the HTML pages themselves.
 
 ## Contribution.
