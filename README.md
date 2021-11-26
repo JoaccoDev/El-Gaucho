@@ -1,45 +1,43 @@
-# Proyecto Final.
+# Final project.
 ## "El Gaucho"
 
-En este proyecto final elegí hacer un sitio web para el restaurante de mi familia, situado en Quilmes Centro (Buenos Aires).
+Final project based on the creation of a website for a restaurant located in Argentina.
 
-Aspectos incluidos en la entrega:
+Aspects included in the project:
 - HTML.
 - CSS.
 - SASS.
 - NodeJS.
 - Bootstrap.
 - Responsive design.
-- SEO Básico.
+- Basic SEO.
 
 ## DEMO.
 
-Para ver la DEMO de mi proyecto final, simplemente [clickea en este mensaje](https://joagcoder.github.io/ElGaucho/).
+To see the DEMO of my final project, simply [click on this message] (https://joagcoder.github.io/ElGaucho/).
 
-## Instalación.
+## Installation.
 
-Cualquier persona es libre de poder descargar mis archivos ya sea para mirarlos más en profundidad, modificar algo o recomendarme cambios o mejoras que podrían ser pertinentes en el repositorio.
-> Para realizar una descarga de todo el repositorio, debes ir a [este link](https://github.com/JoagCoder/ElGaucho). Luego, haz click en el botón "Code" arriba a la derecha.
+Anyone is free to download my files either to look at them more in depth, modify something or recommend changes or improvements that could be relevant.
+> To download the entire repository, you must go to [this link] (https://github.com/JoagCoder/ElGaucho). Then, click on the "Code" button at the top right.
 >
-> Clickea donde dice "Download ZIP" y elije la ruta donde quieres tu descarga.
+> Click where it says "Download ZIP" and choose the location where you want your download.
 
-## Uso.
+## Use.
 
-Debido a que los estilos de mi proyecto final fueron aplicados desde SASS y, aunque no es necesario, es recomendable utilizarlo para cambiar los estilos del sitio. Primero es importante tener descargado NodeJS y NPM en su computadora, luego sigue los pasos a continuación.
-> Ve a tu consola, situate en la carpeta del repositorio y utiliza el comando:
-```cmd
+Because the styles of my final project were applied from SASS and, although it is not necessary, it is recommended to use it to change the styles of the site. It is important to have NodeJS and NPM downloaded on your computer first, then follow the steps below.
+> Go to your console, go to the repository folder and use the command:
+`` `cmd
 npm install -D node-sass nodemon
-```
-> Para generar la carpeta "node_modules".
+`` ''
+> To generate the folder "node_modules".
 >
-> Luego debes usar el siguiente comando para hacer un seguimiento de las modificaciones realizadas.
-```cmd
+> Then you must use the following command to keep track of the modifications made.
+`` `cmd
 npm run watch-css
-```
-Una vez realizado esto, todos los cambios realizados a los archivos dentro de la carpeta SCSS serán también realizados automáticamente en la carpeta CSS, así como en las páginas HTML mismamente.
+`` ''
+Once this is done, all changes made to the files within the SCSS folder will also be automatically made to the CSS folder, as well as to the HTML pages themselves.
 
-## Contribución.
+## Contribution.
 
-Cualquier persona es bienvenida para recomendar cambios y modificaciones mediante "pull requests". Para cambios grandes y que cambien contenido relacionado directamente con la página, por favor inicia una "issue" para que hablemos de lo que te gustaría modificar.
-
-Gracias por su tiempo!
+Anyone is welcome to recommend changes and modifications that would improve the site through pull requests. For a bigger change that is related directly to main content of the page, please start an "issue" so we can discuss about what you would like to change.
