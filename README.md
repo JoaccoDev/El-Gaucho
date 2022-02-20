@@ -7,14 +7,12 @@ Aspects included in the project:
 - HTML.
 - CSS.
 - SASS.
-- NodeJS.
-- Bootstrap.
 - Responsive design.
 - Basic SEO.
 
 ## Demonstration.
 
-To see an online demo (from GitHub Pages) of my project, simply [click on this text](https://joagcoder.github.io/ElGaucho/).
+To see an online demo (from GitHub Pages) of my project, simply [click here](https://joagcoder.github.io/ElGaucho/).
 
 ## Installation.
 
@@ -38,4 +36,4 @@ Once this is done, all changes made to the files within the SCSS folder will als
 
 ## Contribution.
 
-Anyone is welcome to recommend changes and modifications that would improve the site through pull requests. For a bigger change that is related directly to main content of the page, please start an "issue" so we can discuss about what you would like to change.
+Since this is a private project that I made to achieve "web developer" certification, I'm not accepting contributions.
