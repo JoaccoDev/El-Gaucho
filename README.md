@@ -12,12 +12,12 @@ Aspects included in the project:
 
 ## Demonstration.
 
-To see an online demo (from GitHub Pages) of my project, simply [click here](https://joagcoder.github.io/ElGaucho/).
+To see an online demo (from GitHub Pages) of my project, simply [click here](https://joaccodev.github.io/El-Gaucho/).
 
 ## Installation.
 
 Anyone is free to download my files either to look at them more in depth, modify something or recommend changes or improvements that could be relevant.
-> To download the entire repository, you must go to [this link](https://github.com/JoagCoder/ElGaucho). Then, click on the "Code" button at the right-top.
+> To download the entire repository, you must go to [this link](https://joaccodev.github.io/El-Gaucho/). Then, click on the "Code" button at the right-top.
 >
 > Click where it says "Download ZIP" and choose the location where you want your download.
 
